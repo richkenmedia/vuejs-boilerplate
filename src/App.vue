@@ -2,26 +2,23 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <Header></Header>
-        <Sidebar></Sidebar>
-        <Footer></Footer>
+        <router-link to="/">Go to Foo</router-link>
+        <router-link to="/about">Go to Bar</router-link>
+        <div>
+          <router-view></router-view>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { Header, Sidebar, Footer } from './components/commons';
 import 'bootstrap';
 import './themes/vssc/style.scss';
 
 export default {
   name: 'App',
-  components: {
-    Header,
-    Sidebar,
-    Footer,
-  },
+  components: {},
 };
 </script>
 
