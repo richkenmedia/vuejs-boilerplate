@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import frontendRoutes from './FrontendRoutes';
 import backendRoutes from './BackendRoutes';
 
-const router = createRouter({
+const routes = createRouter({
   routes: [
     ...frontendRoutes,
     ...backendRoutes,
@@ -10,4 +10,4 @@ const router = createRouter({
   history: createWebHistory(),
 });
 
-export default router;
+export default routes;

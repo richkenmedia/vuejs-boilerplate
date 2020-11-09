@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <router-link to="/">Go to Foo</router-link>
-        <router-link to="/about">Go to Bar</router-link>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
         <div>
           <router-view></router-view>
         </div>
