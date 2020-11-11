@@ -6,17 +6,17 @@
 
 <script lang="js">
 export default {
-  name: 'dashboard',
+  name: 'Dashboard',
   props: [],
-  mounted() {
-  },
   data() {
     return {
     };
   },
-  methods: {
-  },
   computed: {
+  },
+  mounted() {
+  },
+  methods: {
   },
 };
 </script>

@@ -7,20 +7,20 @@
 <script lang="js">
 
 export default {
-  name: 'about',
+  name: 'About',
   props: [],
-  mounted() {
-
-  },
   data() {
     return {
 
     };
   },
-  methods: {
+  computed: {
 
   },
-  computed: {
+  mounted() {
+
+  },
+  methods: {
 
   },
 };

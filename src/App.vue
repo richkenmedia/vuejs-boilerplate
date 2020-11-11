@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-        <div>
-          <router-view></router-view>
-        </div>
-      </div>
+  <div class="container-fluid">
+    <router-link to="/">
+      Home
+    </router-link> |
+    <router-link to="/about">
+      About
+    </router-link>
+    <div>
+      <router-view />
     </div>
   </div>
 </template>
