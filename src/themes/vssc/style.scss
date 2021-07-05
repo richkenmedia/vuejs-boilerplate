@@ -1,2 +1,18 @@
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
+.draggable-container {
+  margin: 10px;
+  padding: 20px;
+  border: #ccc 1px solid;
+}
+
+.draggable-card {
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px;
+  cursor: pointer;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
