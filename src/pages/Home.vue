@@ -54,7 +54,6 @@ export default {
   },
   methods: {
     itemDropped(params) {
-      console.log('I am getting called');
       console.log(params);
     },
   },
