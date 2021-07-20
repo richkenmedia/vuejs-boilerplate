@@ -11,12 +11,13 @@
 export default {
   props: ['id'],
   methods: {
-    drop: (e) => {
+    drop(e) {
       const cardId = e.dataTransfer.getData('card_id');
       const card = document.getElementById(cardId);
       card.style.display = 'block';
       card.style.cursor = 'pointer';
       e.target.appendChild(card);
+      this.$emit('item-dropped', { task_id: cardId, state: this.id });
     },
   },
 };

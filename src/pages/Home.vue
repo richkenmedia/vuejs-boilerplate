@@ -4,7 +4,9 @@
     <div class="row">
       <div class="col-4">
         <h2>Todo</h2>
-        <DraggableContainer id="todo">
+        <DraggableContainer
+          id="todo"
+          @item-dropped="itemDropped">
           <DraggableCard
             id="task1"
             draggable="true">
@@ -14,7 +16,9 @@
       </div>
       <div class="col-4">
         <h2>In Progress</h2>
-        <DraggableContainer id="in-progress">
+        <DraggableContainer
+          id="in-progress"
+          @item-dropped="itemDropped">
           <DraggableCard
             id="task2"
             draggable="true">
@@ -24,7 +28,9 @@
       </div>
       <div class="col-4">
         <h2>Done</h2>
-        <DraggableContainer id="done">
+        <DraggableContainer
+          id="done"
+          @item-dropped="itemDropped">
           <DraggableCard
             id="task3"
             draggable="true">
@@ -45,6 +51,12 @@ export default {
   components: {
     DraggableContainer,
     DraggableCard,
+  },
+  methods: {
+    itemDropped(params) {
+      console.log('I am getting called');
+      console.log(params);
+    },
   },
 };
 
